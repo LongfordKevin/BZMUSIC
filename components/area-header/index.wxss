@@ -1,0 +1,5 @@
+/* components/area-header/index.wxss */
+.title-slot {
+    font-weight: 700;
+    /* font-size: 32rpx; */
+}

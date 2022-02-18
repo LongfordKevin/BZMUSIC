@@ -1,0 +1,24 @@
+/* pages/home-music/index.wxss */
+page {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.banner {
+    border-radius: 10px;
+    overflow: hidden;
+    /* 处理圆角bug */
+    transform: translateY(0);
+}
+.swiper-image {
+    width: 100%;
+}
+.swiper-item {
+    /* 此举可消除图片自带的3像素 */
+    display: flex;
+}
+.van-search__content {
+    background-color: #fff !important;
+}
+.van-search {
+    padding: 10px 0px !important;
+}

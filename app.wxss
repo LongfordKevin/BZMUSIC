@@ -1,0 +1,7 @@
+page {
+    background-color: #fafafa;
+}
+.van-cell {
+    background-color: #fafafa !important;
+    padding: 10px 0px !important;
+}

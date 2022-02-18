@@ -1,0 +1,13 @@
+<!--components/music-rec-item/index.wxml-->
+<view class="item">
+    <view class="image">
+        <image class="item-image" src="{{musicItem.al.picUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="content">
+        <view class="title">{{musicItem.name}}</view>
+        <view class="artist">{{musicItem.ar[0].name}}</view>
+    </view>
+    <view class="icon">
+        <van-icon name="arrow" size="18px" color="#999" />
+    </view>
+</view>

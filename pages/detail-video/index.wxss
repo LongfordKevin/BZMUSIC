@@ -1,0 +1,28 @@
+/* pages/detail-video/index.wxss */
+page {
+    padding-top: 225px;
+}
+.video {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.info {
+    margin: 10px 5px;
+}
+.title {
+    font-weight: 700;
+    font-size: 32rpx;
+}
+.artist-name, .count {
+    margin-top: 5px;
+    font-size: 28rpx;
+    color: #666;
+}
+.related {
+    margin: 10px 5px;
+}
+.related-title {
+    font-size: 32rpx;
+}

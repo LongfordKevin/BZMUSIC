@@ -1,0 +1,14 @@
+<!--pages/detail-video/index.wxml-->
+<wxs src="../../utils/wxs/format.wxs" module="format"></wxs>
+<video class="video" src="{{mvPath.url}}" autoplay="true" loop="true"></video>
+<view class="info">
+    <view class="title">{{mvInfo.name}}</view>
+    <view class="artist-name">{{mvInfo.artistName}}</view>
+    <view class="count">{{format.formatCount(mvInfo.playCount)}}--{{mvInfo.publishTime}}</view>
+</view>
+<view class="related">
+    <view class="related-title">推荐视频</view>
+    <block wx:for="{{mvRelated}}" wx:key="vid">
+        <video-related mvRelated="{{item}}"></video-related>
+    </block>
+</view>

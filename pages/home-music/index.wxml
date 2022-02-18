@@ -1,0 +1,22 @@
+<!--pages/home-music/index.wxml-->
+<van-search 
+    disabled 
+    shape="round" 
+    v-model="value" 
+    background="#fafafa"
+    placeholder="请输入歌曲名或歌手名" 
+    bind:click-input="searchInput" />
+<swiper class="banner" indicator-dots="true" autoplay="true" circular="true" style="height: {{bannerHeight}};" interval="2500">
+    <block wx:for="{{bannerInfo}}" wx:key="bannerId">
+        <swiper-item class="swiper-item">
+            <image class="swiper-image" src="{{item.pic}}" mode="widthFix" bindload="imageLoading"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="recommend-music">
+    <area-header class="area-header" title="歌曲推荐" cell_value="更多"></area-header>
+    <block wx:for="{{recommendMusic}}" wx:key="id">
+        <music-rec-item musicItem="{{item}}"></music-rec-item>
+    </block>
+</view>
+

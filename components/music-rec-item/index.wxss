@@ -1,0 +1,28 @@
+/* components/music-rec-item/index.wxss */
+.item {
+    width: 100%;
+    display: flex;
+}
+.image {
+    border-radius: 10%;
+    overflow: hidden;
+    transform: translateY(0);
+}
+.item-image {
+    width: 102rpx;
+}
+.content {
+    flex: 1;
+    padding-left: 10px;
+}
+.title {
+    font-size: 28rpx;
+}
+.artist {
+    padding-top: 5px;
+    font-size: 24rpx;
+    color: #999;
+}
+.icon {
+    width: 30rpx;
+}

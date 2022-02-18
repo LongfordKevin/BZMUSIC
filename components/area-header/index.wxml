@@ -1,0 +1,6 @@
+<!--components/area-header/index.wxml-->
+<van-cell is-link value="{{cell_value}}" border="{{false}}" class="header-cell">
+    <view slot="title" class="title-slot">
+        {{title}}
+    </view>
+</van-cell>
